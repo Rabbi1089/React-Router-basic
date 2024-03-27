@@ -9,3 +9,11 @@ nav a {
 nav{
     background-color: whitesmoke;
 }
+
+nav a.active {
+    text-decoration: underline;
+    font-size: medium;
+    text-shadow: 10px;
+    color: blueviolet;
+}
+

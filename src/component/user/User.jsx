@@ -19,6 +19,7 @@ const User = ({user}) => {
             <h4>Website : {website}</h4>
             <Link to={`/users/${id}`}>Show Details  </Link>
             <button onClick={handleShowDetails}>Show detail</button>
+            
         </div>
     );
 };

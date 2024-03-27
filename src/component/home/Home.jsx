@@ -1,13 +1,21 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation, useNavigation } from "react-router-dom";
 import Header from "../header/Header";
 import Footer from "../fotter/Footer";
 
 const Home = () => {
+    const navigation = useNavigation();
+    const location = useLocation();
+    console.log(location)
     return (
         <div>
-            <h2>This is from home components</h2>
             <Header></Header>
-            <Outlet></Outlet>
+            <h2>Wellcome to my page <br /> data will appear soon</h2>
+            {
+                navigation.state === "loading" ?
+                <p> data is loading </p> : <Outlet></Outlet>
+            }
+            
+            
             <Footer></Footer>
         </div>
     );
