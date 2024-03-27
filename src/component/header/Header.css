@@ -1,0 +1,11 @@
+nav a {
+    margin-right: 20px;
+    border-block-start-color: black;
+    border-color: blue;
+    padding: auto;
+
+}
+
+nav{
+    background-color: whitesmoke;
+}
